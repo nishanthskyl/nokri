@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naukri.com Job Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Naukri.com Job Search</h1>
+        
+        <div class="search-forms">
+            <div class="form-container">
+                <h2>Job Criteria</h2>
+                <form id="jobCriteriaForm">
+                    <div class="form-group">
+                        <label for="skills">Skills:</label>
+                        <input type="text" id="skills" placeholder="e.g. JavaScript, React">
+                    </div>
+                    <div class="form-group">
+                        <label for="designation">Designation:</label>
+                        <input type="text" id="designation" placeholder="e.g. Software Engineer">
+                    </div>
+                    <div class="form-group">
+                        <label for="companies">Companies:</label>
+                        <input type="text" id="companies" placeholder="e.g. Google, Amazon">
+                    </div>
+                </form>
+            </div>
+            
+            <div class="form-container">
+                <h2>Location</h2>
+                <form id="locationForm">
+                    <div class="form-group">
+                        <label for="location">Location:</label>
+                        <input type="text" id="location" placeholder="e.g. Bangalore, Remote">
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <button id="searchButton" class="search-button">Search Jobs</button>
+        
+        <div id="loading" class="loading" style="display: none;">
+            <div class="spinner"></div>
+            <p>Searching for jobs...</p>
+        </div>
+        
+        <div id="resultsContainer" class="results-container">
+            <h2 id="resultsTitle" style="display: none;">Search Results</h2>
+            <div id="jobResults"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
